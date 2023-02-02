@@ -1,0 +1,25 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+
+#container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: aliceblue;
+    transition: 1.5s;
+}
+
+.grid-item:hover {
+    background-color: aqua;
+    transition: 0.2s;
+}
